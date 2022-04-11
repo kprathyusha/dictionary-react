@@ -13,9 +13,9 @@ function App() {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    Opensource code by{" "}
+                    Opensource code by
                 </a>
-                Prathyusha K
+                {" "}Prathyusha K
             </footer>
         </div>
     );

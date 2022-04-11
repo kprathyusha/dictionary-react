@@ -1,8 +1,10 @@
 .App {
     text-align: center;
+    color: #dfdfde;
 }
 .App a {
-    text-decoration: none;
+    /* text-decoration: none; */
+    color: #dfdfde;
 }
 
 /* .App-header {

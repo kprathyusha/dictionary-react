@@ -8,7 +8,7 @@ export default function Search() {
     let [results, setResults] = useState(null);
 
     function showResult(response) {
-        console.log(response.data);
+        //console.log(response.data);
         setResults(response.data[0]);
         // console.log(response.data[0].meanings[0].definitions[0].definition);
     }
@@ -36,6 +36,7 @@ export default function Search() {
                         onChange={handleKeywordChange}
                     />
                 </form>
+
                 <Results results={results} />
             </div>
         </div>
