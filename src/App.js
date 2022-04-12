@@ -5,8 +5,10 @@ import Search from "./Search";
 function App() {
     return (
         <div className="App">
-            <Search />
-            <br />
+            <header>Dictionary</header>
+            <div className="container">
+                <Search />
+            </div>
             <footer>
                 <a
                     href="https://github.com/kprathyusha/dictionary-react"
@@ -14,8 +16,8 @@ function App() {
                     rel="noreferrer"
                 >
                     Opensource code by
-                </a>
-                {" "}Prathyusha K
+                </a>{" "}
+                <span>Prathyusha K</span>
             </footer>
         </div>
     );

@@ -1,0 +1,11 @@
+.Synonyms ul {
+    text-decoration: none;
+}
+.Synonyms li {
+    display: inline;
+    padding-right: 15px;
+    font-style: italic;
+}
+h6 {
+    font-weight: bold;
+}

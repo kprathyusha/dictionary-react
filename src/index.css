@@ -5,11 +5,11 @@ body {
         "Helvetica Neue", sans-serif;
     /* -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; */
-    background-image: linear-gradient(75deg, #595b5c, #282c34);
+    /* background-image: linear-gradient(75deg, #595b5c, #282c34);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     
 }
 

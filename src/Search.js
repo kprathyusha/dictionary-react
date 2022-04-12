@@ -28,7 +28,7 @@ export default function Search() {
     return (
         <div>
             <div className="Search">
-                <h1>Dictionary</h1>
+               
                 <form onSubmit={handleSubmit}>
                     <input
                         type="search"

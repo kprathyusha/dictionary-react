@@ -1,22 +1,31 @@
 .App {
-    /* text-align: center; */
     color: #dfdfde;
 }
 .App a {
-    /* text-decoration: none; */
-    color: #dfdfde;
+    text-decoration: none;
 }
-
-/* .App-header {
+.App header {
     background-color: #282c34;
-    min-height: 100vh;
+    min-height: 22vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    font-size: 50px;
     color: white;
-} */
+}
+
+.App .container {
+    margin-top: 20px;
+    max-width: 80%;
+}
+
+.App footer {
+    margin: 15px;
+    text-align: center;
+    color: #282c34;
+}
+
 
 /* @keyframes App-logo-spin {
   from {
