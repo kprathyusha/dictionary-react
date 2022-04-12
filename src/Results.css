@@ -1,6 +1,7 @@
-
+.Results .def {
+    padding: 6px 0;
+}
 .Results h2,
 h5 {
     font-weight: bold;
 }
-
