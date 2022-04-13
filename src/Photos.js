@@ -6,15 +6,17 @@ export default function Photos(props) {
         console.log(props.photos);
         return (
             <section className="Photos">
-                {props.photos.map(function (photo, index) {
-                    return (
-                        <img
-                            src={photo.src.small}
-                            alt="img not available"
-                            key={index}
-                        />
-                    );
-                })}
+                <div className="row">
+                    {props.photos.map(function (photo, index) {
+                        return (
+                            <img
+                                src={photo.src.landscape}
+                                alt="img not available"
+                                key={index}
+                            />
+                        );
+                    })}
+                </div>
             </section>
         );
     } else {

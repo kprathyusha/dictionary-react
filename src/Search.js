@@ -29,7 +29,7 @@ export default function Search() {
 
         const pexelsApikey =
             "563492ad6f917000010000017bc55a9495c24e6bb52145e7f9564f1b";
-        let pexelsApiurl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=3`;
+        let pexelsApiurl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=5`;
         let headers = { Authorization: `Bearer ${pexelsApikey}` };
         axios
             .get(pexelsApiurl, { headers: headers })
@@ -50,9 +50,14 @@ export default function Search() {
                         onChange={handleKeywordChange}
                     />
                 </form>
-
-                <Results results={results} />
-                <Photos photos={photos} />
+                <div className="row">
+                    <div className="col-md-8">
+                        <Results results={results} />
+                    </div>
+                    <div className="col-md-4">
+                        <Photos photos={photos} />
+                    </div>
+                </div>
             </div>
         </div>
     );
