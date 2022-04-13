@@ -2,10 +2,12 @@ import axios from "axios";
 import React, { useState } from "react";
 import "./Search.css";
 import Results from "./Results";
+import Photos from "./Photos";
 
 export default function Search() {
     let [keyword, setKeyword] = useState("");
     let [results, setResults] = useState(null);
+    let [photos, setPhotos] = useState(null);
 
     function showResult(response) {
         //console.log(response.data);
@@ -14,7 +16,8 @@ export default function Search() {
     }
 
     function handlePexelsResponse(response) {
-        console.log(response.data);
+        //console.log(response.data);
+        setPhotos(response.data.photos);
     }
 
     function handleSubmit(event) {
@@ -26,7 +29,7 @@ export default function Search() {
 
         const pexelsApikey =
             "563492ad6f917000010000017bc55a9495c24e6bb52145e7f9564f1b";
-        let pexelsApiurl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+        let pexelsApiurl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=3`;
         let headers = { Authorization: `Bearer ${pexelsApikey}` };
         axios
             .get(pexelsApiurl, { headers: headers })
@@ -49,6 +52,7 @@ export default function Search() {
                 </form>
 
                 <Results results={results} />
+                <Photos photos={photos} />
             </div>
         </div>
     );
