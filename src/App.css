@@ -1,18 +1,19 @@
 .App {
-    color: #dfdfde;
+    color: #F6E7D8;
+     font-family: "Cormorant Garamond", serif;
 }
 .App a {
     text-decoration: none;
 }
 .App header {
-    background-color: #282c34;
-    min-height: 22vh;
+    background-color: #343F56;
+    min-height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
-    color: white;
+    font-size: 60px;
+    color: #F6E7D8;
 }
 
 .App .container {
@@ -23,7 +24,8 @@
 .App footer {
     margin: 15px;
     text-align: center;
-    color: #282c34;
+    color: #343F56;
+    font-weight: bold;
 }
 
 

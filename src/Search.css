@@ -1,14 +1,14 @@
 .Search section {
-    background-color: #282c34;
+    background-color: #343F56;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0px 10px 10px rgba(49, 47, 47, 0.3);
+    box-shadow: 0px 12px 12px rgba(15, 26, 48, 0.4);
     margin: 20px 0;
     
 }
 .Search form {
     text-align: center;
-    background-color: #282c34;
+    background-color: #343F56;
     border: 1 px solid black;
     border-radius: 18px;
     padding: 35px 0;
