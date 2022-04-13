@@ -10,20 +10,18 @@ export default function Search() {
     let [photos, setPhotos] = useState(null);
 
     function showResult(response) {
-        //console.log(response.data);
+        
         setResults(response.data[0]);
-        // console.log(response.data[0].meanings[0].definitions[0].definition);
+        
     }
 
     function handlePexelsResponse(response) {
-        //console.log(response.data);
-        setPhotos(response.data.photos);
+              setPhotos(response.data.photos);
     }
 
     function handleSubmit(event) {
         event.preventDefault();
-        // alert(`The word you are searching is ${keyword}`);
-
+        
         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
         axios.get(apiUrl).then(showResult);
 

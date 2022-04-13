@@ -4,7 +4,6 @@ import "./Phonetics.css";
 export default function Phonetics(props) {
     console.log(props.phonetics);
     console.log(props.phonetics.text);
-    //return `hello from ${props.phonetics.text}`;
     if (props.phonetics.audio) {
     return (
         <div className="Phonetics">
